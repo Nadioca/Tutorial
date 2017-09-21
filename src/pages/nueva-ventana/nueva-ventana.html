@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Nueva Ventana</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <h3>Estas en la nueva Ventana</h3>
+
+  <button ion-button color="secondary" (click)="mostrarAlerta();">Alerta</button>
+
+  <p *ngFor="let p of animales">
+      <button ion-button color="secondary" (click)="mostrarAlerta(p.nombre);">{{p.nombre}}</button>
+  </p>
+
+</ion-content>
